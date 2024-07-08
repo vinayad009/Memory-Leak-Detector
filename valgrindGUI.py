@@ -24,7 +24,7 @@ class MemoryLeakGUI:
         try:
             process_path = f"./{str(self.process_entry.get())}"
             valgrind_output = subprocess.run(
-                ["valgrind", "--leak-check=full", process_path],  # Replace with your program's path and name
+                ["valgrind", "--leak-check=full", process_path], 
                 shell=False,
                 capture_output=True,
                 text=True
